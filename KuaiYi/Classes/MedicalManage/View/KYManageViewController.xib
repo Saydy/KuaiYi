@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KYManageViewController">
+            <connections>
+                <outlet property="tableView" destination="tqa-a2-soj" id="NrZ-5j-xSd"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Ejp-gb-a7i"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="tqa-a2-soj">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mla-UT-gz3">
+                    <rect key="frame" x="0.0" y="622" width="375" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="uYC-zt-KT3"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zf7-dc-1tT">
+                    <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                    <state key="normal" title="添加病历" image="yiyuan">
+                        <color key="titleColor" red="0.12549019607843137" green="0.77647058823529413" blue="0.77647058823529413" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <state key="highlighted">
+                        <color key="titleColor" red="0.36925051334097364" green="0.61429244237588654" blue="0.55275225227185798" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="addBtnTouch:" destination="-1" eventType="touchUpInside" id="A1A-V9-CdQ"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Zf7-dc-1tT" firstAttribute="top" secondItem="Mla-UT-gz3" secondAttribute="bottom" id="GZj-0Z-QK4"/>
+                <constraint firstItem="tqa-a2-soj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PBd-sN-V6Z"/>
+                <constraint firstItem="Zf7-dc-1tT" firstAttribute="top" secondItem="tqa-a2-soj" secondAttribute="bottom" id="VwU-ug-2LB"/>
+                <constraint firstItem="tqa-a2-soj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="d0A-oV-2U5"/>
+                <constraint firstItem="Zf7-dc-1tT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eGI-rh-rU7"/>
+                <constraint firstAttribute="trailing" secondItem="Mla-UT-gz3" secondAttribute="trailing" id="jdV-Up-cFZ"/>
+                <constraint firstAttribute="trailing" secondItem="Zf7-dc-1tT" secondAttribute="trailing" id="nOx-HI-Slj"/>
+                <constraint firstAttribute="bottom" secondItem="Zf7-dc-1tT" secondAttribute="bottom" id="szr-S7-ans"/>
+                <constraint firstItem="Mla-UT-gz3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vLT-9z-HT9"/>
+                <constraint firstAttribute="trailing" secondItem="tqa-a2-soj" secondAttribute="trailing" id="zA5-JZ-Djg"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="yiyuan" width="44" height="44"/>
+    </resources>
+</document>

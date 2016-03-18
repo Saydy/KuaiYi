@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KYHomeViewController">
+            <connections>
+                <outlet property="btnsView" destination="pNi-Ga-KNo" id="B1D-Le-Va1"/>
+                <outlet property="cycleView" destination="DRh-je-xwv" id="5Az-gV-lX8"/>
+                <outlet property="view" destination="iN0-l3-epB" id="ZHD-dZ-Dpo"/>
+                <outlet property="weatherTopView" destination="pga-Ah-QR8" id="ukC-4a-TI8"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uMY-G8-6nM" userLabel="space">
+                    <rect key="frame" x="0.0" y="364" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="KsL-zN-6tO"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I32-2s-pfO" userLabel="space">
+                    <rect key="frame" x="0.0" y="400" width="375" height="1"/>
+                    <color key="backgroundColor" red="0.89803921568627454" green="0.89803921568627454" blue="0.89803921568627454" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="3fA-TQ-4Au"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RVK-WN-cQb" userLabel="titleView">
+                    <rect key="frame" x="12" y="372" width="6" height="20"/>
+                    <color key="backgroundColor" red="0.87843137250000003" green="0.95686274510000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="WV4-MY-pUc"/>
+                        <constraint firstAttribute="width" constant="6" id="Xdb-hU-6hq"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="名医通" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y4m-iH-kKo">
+                    <rect key="frame" x="26" y="373" width="45" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pNi-Ga-KNo">
+                    <rect key="frame" x="0.0" y="401" width="375" height="266"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="a2q-Fr-Zpi"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="a2q-Fr-Zpi"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pga-Ah-QR8" userLabel="weather" customClass="KYWeatherView">
+                    <rect key="frame" x="0.0" y="64" width="375" height="70"/>
+                    <color key="backgroundColor" red="0.87843137250000003" green="0.95686274510000002" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="70" id="tAA-PK-BIe"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DRh-je-xwv">
+                    <rect key="frame" x="0.0" y="134" width="375" height="230"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="230" id="lsK-a0-1yp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="uMY-G8-6nM" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="4Yw-FI-2sm"/>
+                <constraint firstItem="RVK-WN-cQb" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="12" id="94I-FC-1Ub"/>
+                <constraint firstAttribute="bottom" secondItem="pNi-Ga-KNo" secondAttribute="bottom" id="Cgy-t6-kdJ"/>
+                <constraint firstAttribute="trailing" secondItem="uMY-G8-6nM" secondAttribute="trailing" id="HGm-68-Eem"/>
+                <constraint firstItem="I32-2s-pfO" firstAttribute="top" secondItem="RVK-WN-cQb" secondAttribute="bottom" constant="8" id="JDh-s3-5c2"/>
+                <constraint firstItem="DRh-je-xwv" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Qbe-1O-FRy"/>
+                <constraint firstItem="pNi-Ga-KNo" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Tcf-4B-t1P"/>
+                <constraint firstItem="I32-2s-pfO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="UHw-Yb-Twu"/>
+                <constraint firstItem="RVK-WN-cQb" firstAttribute="top" secondItem="uMY-G8-6nM" secondAttribute="bottom" constant="7" id="XJl-Lb-uMv"/>
+                <constraint firstItem="DRh-je-xwv" firstAttribute="top" secondItem="pga-Ah-QR8" secondAttribute="bottom" id="aDH-IH-02Y"/>
+                <constraint firstItem="pga-Ah-QR8" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="64" id="cTv-CL-mSo"/>
+                <constraint firstAttribute="bottom" secondItem="pNi-Ga-KNo" secondAttribute="bottom" constant="20" id="cg2-Sl-Y91"/>
+                <constraint firstAttribute="trailing" secondItem="pNi-Ga-KNo" secondAttribute="trailing" id="d4G-GW-a97"/>
+                <constraint firstAttribute="trailing" secondItem="pga-Ah-QR8" secondAttribute="trailing" id="e6T-kU-1q6"/>
+                <constraint firstAttribute="trailing" secondItem="I32-2s-pfO" secondAttribute="trailing" id="iSb-2j-Qgb"/>
+                <constraint firstAttribute="trailing" secondItem="DRh-je-xwv" secondAttribute="trailing" id="j5N-za-gCd"/>
+                <constraint firstItem="Y4m-iH-kKo" firstAttribute="leading" secondItem="RVK-WN-cQb" secondAttribute="trailing" constant="8" id="kU4-aK-9mE"/>
+                <constraint firstItem="uMY-G8-6nM" firstAttribute="top" secondItem="DRh-je-xwv" secondAttribute="bottom" id="lVh-IZ-LTL"/>
+                <constraint firstItem="pga-Ah-QR8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pe2-5M-ChI"/>
+                <constraint firstItem="Y4m-iH-kKo" firstAttribute="top" secondItem="uMY-G8-6nM" secondAttribute="bottom" constant="8" id="tAw-UX-KB7"/>
+                <constraint firstItem="pNi-Ga-KNo" firstAttribute="top" secondItem="I32-2s-pfO" secondAttribute="bottom" id="wzb-52-HnA"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="cg2-Sl-Y91"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="231.5" y="291.5"/>
+        </view>
+    </objects>
+</document>

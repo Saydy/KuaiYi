@@ -1,0 +1,29 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "58e89844-cd06-534d-be18-50ba5f1b6983",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "58e89844-cd06-534d-be18-50ba5f1b6983" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "58e89844-cd06-534d-be18-50ba5f1b6983" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "049FAA3C-F9E2-446B-94E5-5CC8A604B4EE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+<<<<<<< .mine
+    "58e89844-cd06-534d-be18-50ba5f1b6983" : "lc\/"
+=======
+    "58e89844-cd06-534d-be18-50ba5f1b6983" : "group06\/"
+>>>>>>> .r118
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "KuaiYi",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "branches\/KuaiYi\/KuaiYi.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/192.168.10.10\/svn\/group06",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "58e89844-cd06-534d-be18-50ba5f1b6983"
+    }
+  ]
+}

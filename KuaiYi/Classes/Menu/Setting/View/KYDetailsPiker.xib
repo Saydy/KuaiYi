@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6ck-Vv-jC2" customClass="KYDetailsPiker">
+            <rect key="frame" x="0.0" y="0.0" width="330" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4ho-DS-ex3">
+                    <rect key="frame" x="144" y="8" width="42" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.026895716206982206" green="0.071564767971649679" blue="0.50291982323232332" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="48Z-2b-jtD">
+                    <rect key="frame" x="165" y="206" width="1" height="44"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="1TU-iP-MJx"/>
+                        <constraint firstAttribute="width" constant="1" id="xHb-Sa-K5k"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M7W-RS-VHg">
+                    <rect key="frame" x="0.0" y="205" width="330" height="1"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="3ap-oP-qfp"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5mc-FW-IR8">
+                    <rect key="frame" x="0.0" y="206" width="165" height="44"/>
+                    <state key="normal" title="取消 ">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="cancel:" destination="6ck-Vv-jC2" eventType="touchUpInside" id="hCj-t9-UQr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jej-Fv-rwZ">
+                    <rect key="frame" x="166" y="206" width="164" height="44"/>
+                    <state key="normal" title="提交">
+                        <color key="titleColor" red="0.095327013192301857" green="0.77866556186868685" blue="0.58514855195905024" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="commit:" destination="6ck-Vv-jC2" eventType="touchUpInside" id="J5Q-cI-vag"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jzs-Hb-tsR">
+                    <rect key="frame" x="25" y="36" width="280" height="160.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" red="0.18823529410000001" green="0.76862745099999996" blue="0.77647058820000003" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="280" id="Hlm-FD-NYN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jzs-Hb-tsR" firstAttribute="width" secondItem="6ck-Vv-jC2" secondAttribute="width" id="0Uj-xN-VIO"/>
+                <constraint firstItem="48Z-2b-jtD" firstAttribute="centerX" secondItem="6ck-Vv-jC2" secondAttribute="centerX" id="2mc-dy-wMa"/>
+                <constraint firstItem="4ho-DS-ex3" firstAttribute="top" secondItem="6ck-Vv-jC2" secondAttribute="top" constant="8" id="4fu-x6-04z"/>
+                <constraint firstAttribute="bottom" secondItem="M7W-RS-VHg" secondAttribute="bottom" constant="44" id="4n7-Mv-Yrl"/>
+                <constraint firstAttribute="trailing" secondItem="Jej-Fv-rwZ" secondAttribute="trailing" id="7Vj-bG-o5v"/>
+                <constraint firstItem="M7W-RS-VHg" firstAttribute="leading" secondItem="6ck-Vv-jC2" secondAttribute="leading" id="7a5-YS-Vcf"/>
+                <constraint firstItem="Jej-Fv-rwZ" firstAttribute="top" secondItem="M7W-RS-VHg" secondAttribute="bottom" id="H1S-od-FCZ"/>
+                <constraint firstItem="4ho-DS-ex3" firstAttribute="centerX" secondItem="6ck-Vv-jC2" secondAttribute="centerX" id="Kvd-DY-g9s"/>
+                <constraint firstItem="5mc-FW-IR8" firstAttribute="leading" secondItem="6ck-Vv-jC2" secondAttribute="leading" id="U03-bU-Tsf"/>
+                <constraint firstItem="jzs-Hb-tsR" firstAttribute="top" secondItem="4ho-DS-ex3" secondAttribute="bottom" constant="8" id="UIY-bt-JGC"/>
+                <constraint firstItem="M7W-RS-VHg" firstAttribute="top" secondItem="jzs-Hb-tsR" secondAttribute="bottom" constant="8" id="XxD-Qk-zMj"/>
+                <constraint firstAttribute="bottom" secondItem="48Z-2b-jtD" secondAttribute="bottom" id="ajV-Gw-neC"/>
+                <constraint firstAttribute="bottom" secondItem="Jej-Fv-rwZ" secondAttribute="bottom" id="bPe-5W-Qlf"/>
+                <constraint firstAttribute="bottom" secondItem="5mc-FW-IR8" secondAttribute="bottom" id="fdM-Ld-qVv"/>
+                <constraint firstItem="5mc-FW-IR8" firstAttribute="top" secondItem="M7W-RS-VHg" secondAttribute="bottom" id="hTQ-Vk-Ivl"/>
+                <constraint firstItem="jzs-Hb-tsR" firstAttribute="centerX" secondItem="6ck-Vv-jC2" secondAttribute="centerX" id="oJc-1e-zjL"/>
+                <constraint firstItem="48Z-2b-jtD" firstAttribute="leading" secondItem="5mc-FW-IR8" secondAttribute="trailing" id="p0y-eO-UBX"/>
+                <constraint firstAttribute="trailing" secondItem="M7W-RS-VHg" secondAttribute="trailing" id="ugW-lh-fKp"/>
+                <constraint firstItem="Jej-Fv-rwZ" firstAttribute="leading" secondItem="48Z-2b-jtD" secondAttribute="trailing" id="vs7-Ip-G7P"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="0Uj-xN-VIO"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="cancle" destination="5mc-FW-IR8" id="CCQ-Cj-k77"/>
+                <outlet property="commit" destination="Jej-Fv-rwZ" id="FL3-kH-BpC"/>
+                <outlet property="pickView" destination="jzs-Hb-tsR" id="nmF-r9-yjE"/>
+                <outlet property="title" destination="4ho-DS-ex3" id="83v-Jj-se3"/>
+            </connections>
+            <point key="canvasLocation" x="250" y="418"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,17 @@
+//
+//  KYPrefixHeader.pch
+//  KuaiYi
+//
+//  Created by DaysSummer on 16/1/20.
+//  Copyright © 2016年 SayDy. All rights reserved.
+//
+
+#ifndef KYPrefixHeader_pch
+#define KYPrefixHeader_pch
+
+#define THEMECOLOR [[UIColor alloc] initWithRed:32 / 255.0 green:198 /255.0 blue:198 /255.0 alpha:1]
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+#define SCREEN_SIZE [UIScreen mainScreen].bounds.size
+#define SCREEN_BOUNDS [UIScreen mainScreen].bounds
+#endif /* KYPrefixHeader_pch */

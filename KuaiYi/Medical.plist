@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>贫血</string>
+	<string>呕吐</string>
+	<string>脸色苍白</string>
+	<string>低热</string>
+	<string>呼吸困难</string>
+	<string>鼻出血</string>
+	<string>腹痛</string>
+	<string>皮肤瘙痒</string>
+	<string>咀嚼困难</string>
+	<string>腹泻</string>
+	<string>科尔塔症候群</string>
+</array>
+</plist>
